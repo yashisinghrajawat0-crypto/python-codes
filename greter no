@@ -1,0 +1,11 @@
+first_number=float(input("enter a number\n"))
+second_number=float(input("enter a number\n"))
+third_number=float(input("enter a number\n"))
+if first_number > second_number and first_number> third_number:
+    print("the first gretest number")
+elif second_number> third_number and second_number> first_number:
+    print("the second gretest number")
+elif third_number>first_number and third_number> second_number:
+    print("the third gretest number")
+else:
+     print("all number are equal")

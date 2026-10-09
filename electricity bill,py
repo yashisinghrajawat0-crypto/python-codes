@@ -1,0 +1,21 @@
+units = float(input("Enter units consumed: "))
+if units <= 100:
+    bill = units * 5
+else:
+    if units <= 200:
+        bill = (100 * 5) + (units - 100) * 7
+    else:
+        bill = (100 * 5) + (100 * 7) + (units - 200) * 10
+
+print("Basic Bill: Rs.", bill)
+
+# Surcharge condition
+if bill > 2000:
+    surcharge = bill * 0.05
+    final_bill = bill + surcharge
+    print("Surcharge (5%): Rs.", surcharge)
+else:
+    final_bill = bill
+    print("No surcharge (Bill is less than 2000)")
+
+print("Final Bill to Pay: Rs.", final_bill)
